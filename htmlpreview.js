@@ -5,7 +5,7 @@ var HTMLPreview = {
 	previewform: document.getElementById('previewform'),
 
 	file: function() {
-		return location.search.substring(1); //Get everything after the ?
+		return location.search.substring(1).match('.*\.html')[0]; //Get everything after the ?
 	},
 
 	raw: function() {
